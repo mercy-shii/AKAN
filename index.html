@@ -9,36 +9,41 @@
 </head>
 <body>
     <div class="container">
+        
         <div class="jumbotron">
             <h1>Akan Names</h1>
             <p>Like other cultures akan naming is done very differently from other cultures,
                 since they know a child's naming follows them for the rest of their life,
                 thus by this they name according to the day the were born as follows:</p>
         </div>
-        <form action="/action_page.php">
+        <form>
             <div class="form-group">
                 <label for="Day">Day:</label>
                 <input type="Day" class="form-control" id="Day" placeholder="Enter Day" name="day">
               </div>
               <div class="form-group">
-                  <label for="month">Month:</label>
-                  <input type="month" class="form-contol" id="month" placeholder="Enter month" name="month">
+                  <label for="Month">Month:</label>
+                  <input type="text" class="form-contol" id="Month" placeholder="Enter Month" name="Month">
               </div>
               <div class="form-group">
                   <label for="Year">Year:</label>
-                  <input type="Year" class="form-control" id="Year" placeholder="Enter Year" name="Year">
+                  <input type="text" class="form-control" id="Year" placeholder="Enter Year" name="Year">
               </div>
               <div class="checkbox">
                   <label><input type="checkbox" name="Gender">female</label>
                   <label><input type="checkbox" name="Gender">male</label>
               </div>
-              <button type="submit" class="btn btn-default">submit</button>
+              <button type="button" onclick="AkanName(); return false", class="btn btn-default">submit</button>
 
               </div>
 
         </form>
+        <h2 id="name"></h2>
 
     </div>
+    <script src="script.js"></script>
+
+        
     
 </body>
 </html>
